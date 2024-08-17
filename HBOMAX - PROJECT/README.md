@@ -49,5 +49,5 @@ Nesse projeto usei as seguintes métodologias
 ---
 
 <p align="center">
-    Feito com ♥ by <a href="https://www.youtube.com/channel/UCHf8h4M94Wnw5o4deGWZKnw" target="_blank">Daniel</a>
+    Feito por <a href="https://github.com/L-Gildo/L-Gildo.git" target="_blank">Leonardo Gildo</a>
 </p>
