@@ -1,0 +1,46 @@
+@use "../0-base/variables"
+@use "../0-base/base-mixins"
+
+.footer
+    padding: 2.4rem
+
+    &__info
+        display: flex
+        flex-direction: column
+        gap: 2.8rem
+
+        font-size: 1.4rem
+        font-weight: 700
+        letter-spacing: 2px
+        list-style: none
+        text-transform: uppercase
+        text-align: center
+        padding-bottom: 1.6rem
+
+        @include base-mixins.mobile-504 
+            justify-content: center
+            flex-flow: row wrap
+
+
+    &__link, &__copyright, &__icon
+        color: variables.$footer-link-color
+
+    &__link
+        white-space: nowrap
+
+    &__copyright
+        font-size: 1.2rem
+        text-align: center
+
+    &__social
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 4rem
+        margin-top: 8rem
+
+    &__link-social
+        width: 2.7rem
+
+    &__icon
+        width: 100%

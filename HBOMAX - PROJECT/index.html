@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBO max</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./src/img/favicon.ico">
+    <!-- FONTS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./src/css/app.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="./index.html">
+            <img class="nav__logo" src="./src/img/svg/hbo-logo.svg" alt="Logotipo HBO Max">
+        </a>
+        <div class="nav__wrapper">
+            <a href="./signin.html" class="nav__login">Entrar</a>
+            <a href="#price" class="btn btn-subscribe">Assine Agora</a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__channels">
+                <img src="./src/img/svg/hbo.png.svg" alt="Logo da HBO Max">
+                <img src="./src/img/svg/dc.png.svg" alt="Logo da DC">
+                <img src="./src/img/svg/wb.png.svg" alt="Logo da Warner Bros">
+                <img src="./src/img/svg/cartoon-network_neutral.png.svg" alt="Logo do Cartoon Network">
+                <img src="./src/img/svg/max_originals.png.svg" alt="Logo da Max Originals">
+            </div>
+            <div class="header__headline">
+                <h1 class="header__title">Curta as melhores histórias <br/> <strong>para todo mundo</strong></h1>
+            </div>
+            <hr class="divider"/>
+            <div class="offer">
+                <p class="offer__text">Assinatura a partir de</p>
+                <strong class="offer__price">R$14,45</strong>
+                <span class="offer__month">/mês*</span>
+            </div>
+            <a href="#price" class="btn btn--gradient btn__header">Assine agora</a>
+            <p class="header__text">*aplicável ao plano anual com o pagamento antecipado.</p>
+        </div>
+    </header>
+    <main>
+        <section class="subscription" id="price">
+            <h2 class="content-title">Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h2>
+            <div class="subscription__plans">
+                <div class="subscription__card">
+                    <div class="subscription__content">
+                        <header class="subscription__header">
+                            <h3 class="subscription__mobile">Mobile</h3>
+                            <strong class="subscription__price">R$ 19,90<span class="subscription__month">/mês</span></strong>
+                        </header>
+                        <ul>
+                            <li class="subscription__text">Aproveite em smartphones e tablets, onde quiser.</li>
+                            <li class="subscription__text">Assista em 1 tela por vez.</li>
+                            <li class="subscription__text">Tenha conteúdo em resolução adaptada para cada dispositivo.</li>
+                            <li class="subscription__text">Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn--gradient">Escolher o Plano Mobile</button>
+                </div>
+                <div class="subscription__card">
+                    <div class="subscription__content">
+                        <header class="subscription__header">
+                            <h3 class="subscription__mobile">Multitelas</h3>
+                            <strong class="subscription__price">R$ 27,90<span class="subscription__month">/mês</span></strong>
+                        </header>
+                        <ul>
+                            <li class="subscription__text">Aproveite em todos os seus dispositivos.</li>
+                            <li class="subscription__text">Chromecast e Airplay disponíveis.</li>
+                            <li class="subscription__text">Assista em até 3 telas ao mesmo tempo.</li>
+                            <li class="subscription__text">Tenha conteúdo em alta definição, com qualidade 4K.</li>
+                            <li class="subscription__text">Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
+                            <li class="subscription__text">Crie até 5 perfis diferentes.</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn--gradient">Escolher o Plano Multitelas</button>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <h2 class="content-title">Descubra novos universos</h2>
+            <div class="catalog__container">
+                <div class="catalog__poster">
+                    <img class="catalog__img" src="./src/img/posters/hbo-default_0.png" alt="HBO">
+                </div>
+                <div class="catalog__poster">
+                    <img class="catalog__img" src="./src/img/posters/MAX-Default.png" alt="Max Originals">
+                </div>
+                <div class="catalog__poster">
+                    <img class="catalog__img" src="./src/img/posters/DC_Default.png" alt="DC">
+                </div>
+                <div class="catalog__poster">
+                    <img class="catalog__img" src="./src/img/posters/WB-Default.png" alt="Waner Bros">
+                </div>
+                <div class="catalog__poster">
+                    <img class="catalog__img" src="./src/img/posters/CN-Default.png" alt="Cartoon Network">
+                </div>
+                <div class="catalog__poster">
+                    <img class="catalog__img" src="./src/img/posters/UCL-Default.png" alt="Champios League">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__info">
+            <li clas="footer__item">
+                <a class="footer__link" href="https://www.hbomax.com/br/pt/sitemap">Agora na HBO Max</a>
+            </li>
+            <li clas="footer__item">
+                <a class="footer__link" href="https://www.hbomax.com/br/pt/coming-soon">Em Breve</a>
+            </li>
+            <li clas="footer__item">
+                <a class="footer__link" href="https://www.hbomax.com/br/pt/feature">Filmes em destaque</a>
+            </li>
+            <li clas="footer__item">
+                <a class="footer__link" href="https://www.hbomax.com/br/pt/series">Séries</a>
+            </li>
+            <li clas="footer__item">
+                <a class="footer__link" href="https://help.hbomax.com/br">Ajuda</a>
+            </li>
+        </ul>
+        <p class="footer__copyright">© 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. HBO Max é usado sob licença.</p>
+        <p class="footer__copyright">Feito pelo aluno Leonardo Gildo ( DIO.me / DevMedia / XP Faculdade / GranFaculdade )</p>
+
+        <div class="footer__social">
+            <a class="footer__link-social" href="https://www.facebook.com/HBOMaxBr/" title="Facebook" target="_blank">
+                <img class="footer__icon" src="./src/img/svg/facebook.svg" alt="Logo do Facebook">
+            </a>
+            <a class="footer__link-social" href="https://twitter.com/HBOMaxBR" title="Twitter" target="_blank">
+                <img class="footer__icon" src="./src/img/svg/x.svg" alt="Logo do Twitter">
+            </a>
+            <a class="footer__link-social" href="https://www.instagram.com/hbomaxbr/" title="Instagram" target="_blank">
+                <img class="footer__icon" src="./src/img/svg/instagram.svg" alt="Logo do Instagram">
+            </a>
+            <a class="footer__link-social" href="https://www.youtube.com/c/hbomaxbr" title="YouTube" target="_blank">
+                <img class="footer__icon" src="./src/img/svg/youtube.svg" alt="Logo do Instagram">
+            </a>
+        </div>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

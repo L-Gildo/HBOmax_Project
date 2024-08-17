@@ -1,0 +1,79 @@
+@use "../0-base/variables"
+@use "../0-base/base-mixins"
+
+.signin
+    height: 100vh
+
+    @include base-mixins.mobile-504
+        background-image: url(../img/background-movies-series.png)
+        background-position: top left
+
+    @include base-mixins.desktop-1200 
+        background-position: top right
+
+.main-content
+    display: flex
+    justify-content: center
+    margin-top: 5.6rem
+    padding: 2.4rem
+
+.login
+    border-radius: .8rem
+    background-color: variables.$form-bg-color
+    display: flex
+    flex-direction: column
+    gap: 2.4rem
+
+    height: fit-content
+    max-width: 80rem
+    width: 100%
+    padding: 4rem
+    
+
+    &__title
+        color: variables.$text-color
+        font-size: 2rem
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+
+    &__fields
+        display: grid
+        gap: 2.4rem
+
+    &__legend
+        color: variables.$text-color
+        padding-bottom: 2.4rem
+        font-size: 1.6rem
+
+    &__field
+        background-color: variables.$input-bg-color
+        border: 1px solid variables.$input-border-color
+        border-radius: .8rem
+        color: variables.$text-color
+        font-size: 1.6rem
+
+        height: 5.6rem
+        width: 100%
+        padding: 1.6rem
+
+        &::placeholder
+            color: variables.$input-placeholder-color
+            font-size: 1.6rem
+
+    &__actions
+        display: flex
+        flex-flow: wrap
+        align-items: center
+        gap: 2.8rem
+        padding-top: 2.4rem
+
+        .btn
+            background-color: transparent
+            width: max-content
+
+    &__link
+        color: #9E86FF
+        font-size: 1.6rem
+        font-weight: 700
+

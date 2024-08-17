@@ -1,0 +1,18 @@
+.btn {
+  color: #FFFFFF;
+  border-radius: 50rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: -moz-max-content;
+  width: max-content;
+}
+.btn-price {
+  background: #B535F6;
+  padding: 0.8rem 2.7rem;
+}
+.btn-subscribe {
+  background: linear-gradient(86deg, #9B34EF 21.42%, #490CB0 55.72%, rgba(0, 0, 0, 0) 126.09%);
+  padding: 1.6rem 4rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}/*# sourceMappingURL=module.css.map */

@@ -1,0 +1,65 @@
+@use "../0-base/variables"
+
+.btn
+    color: variables.$btn-color
+    border-radius: 50rem
+    font-size: 1.2rem
+    text-align: center
+    text-transform: uppercase
+    height: max-content
+
+
+    &-subscribe
+        background-color: variables.$btn-subscribe-bg-color
+        padding: .8rem 2.7rem
+        transition: background 1s, color 1s
+
+        &:hover
+            background-color: variables.$btn-subscribe-hover-bg-color
+            color: variables.$btn-subscribe-hover-text-color
+
+    &__header
+        font-size: 1.6rem
+        animation: wiggle 1s infinite alternate
+
+
+    &--gradient
+        background-image: variables.$btn-gradient-color
+        background-repeat: no-repeat
+        background-size: 540%
+        cursor: pointer
+        font-weight: 700
+        letter-spacing: 4px
+        padding: 1.6rem 4rem
+        transition: background-size .5s ease-in-out, outline 1s, transform 1s
+
+        &:hover
+            background-size: 0%
+            background-color: transparent
+            outline: 2px solid variables.$btn-border-color
+            transform: scale(1.1)
+
+
+@keyframes wiggle
+
+    10%
+        transform: rotateZ(-5deg)
+
+    15%
+        transform: rotateZ(5deg)
+
+    20%
+        transform: rotateZ(10deg)
+
+    25%
+        transform: rotateZ(0deg)
+
+    30%
+        transform: rotateZ(-5deg)
+
+    35% 
+        transform: rotateZ(-15deg)
+
+    40%, 
+    100%
+        transform: rotateZ(0deg)

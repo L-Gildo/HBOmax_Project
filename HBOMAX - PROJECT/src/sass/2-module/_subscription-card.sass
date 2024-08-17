@@ -1,0 +1,93 @@
+@use "../0-base/variables"
+@use "../2-module/module-mixins"
+@use "../0-base/base-mixins"
+
+
+.subscription
+    &__plans
+        display: flex
+        flex-flow: wrap
+        justify-content: center
+        gap: 4rem
+        margin-top: 4rem
+
+        perspective: 2000px
+        perspective-origin: top
+        transform-style: perserve-3d
+
+        &:has(.subscription__card:first-child:hover) .subscription__card:last-child
+            transform: rotateY(-45deg)
+
+        &:has(.subscription__card:last-child:hover) .subscription__card:first-child
+            transform: rotateY(45deg)
+
+        @include base-mixins.desktop-1140 
+            flex-flow: row
+
+        @include base-mixins.desktop-1200 
+            gap: 8rem
+
+    &__card
+        background-image:  variables.$subscription-card-bg-color
+        border-radius: .8rem
+        color: variables.$text-color
+
+        display: grid
+        justify-content: space-between
+        padding: 4rem
+        min-height: 60rem
+        max-width: 53rem
+        transition: transform 1s ease
+
+        @include base-mixins.mobile-504 
+            padding: 4rem 6rem
+
+        .btn
+            align-self: flex-end
+            background-color: transparent
+            font-size: 1.33rem
+
+    &__content
+        display: grid
+        grid-template-rows: repeat(6, max-content)
+
+
+    &__header
+        display: flex
+        flex-direction: column
+
+        @include base-mixins.mobile-504 
+            flex-direction: row
+            justify-content: space-between
+
+    &__mobile
+        font-size: 2.3rem
+        text-align: center
+
+    &__price
+        @include module-mixins.subscription-price(variables.$subscription-price-text-color, 2.4rem)
+        display: block
+        padding-bottom: 1.5rem
+        text-align: center
+
+        @include base-mixins.mobile-504 
+            font-size: 3.2rem
+
+    &__month
+        color: variables.$text-color
+        font-size: 1.6rem
+        font-weight: 300
+        margin-left: .5rem
+
+    &__text
+        font-size: 1.6rem
+        padding: 0rem 0rem 1.5rem 1.4rem
+
+        @include base-mixins.mobile-504 
+            font-size: 2rem
+
+        &::marker
+            content: "+"
+            display: block
+            font-size: 3.2rem
+            margin: 0rem 0rem .8rem

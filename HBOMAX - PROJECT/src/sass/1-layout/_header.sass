@@ -1,0 +1,84 @@
+@use "../0-base/variables"
+@use "../0-base/base-mixins"
+@use "../2-module/module-mixins"
+
+.header
+    color: variables.$text-color
+    background-image: variables.$header-bg-color
+    background-size: 500%
+    margin-top: 13rem
+    padding: 10rem 4rem 25rem
+    position: relative
+    animation: move-background 7s infinite alternate
+
+    @include base-mixins.mobile-504 
+        margin-top: 5.5rem
+
+    &::after
+        content: ""
+        background: linear-gradient(0deg, #020228 0%, rgba(0, 0, 0, 0.00) 100%)
+        height: 25rem
+        width: 100%        
+
+        position: absolute
+        left: 0
+        bottom: 0
+
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 4rem
+
+    &__channels
+        display: flex
+        flex-flow: wrap
+        justify-content: center
+        gap: 2.4rem
+
+    &__title
+        font-size: 3.2rem
+        font-weight: 400
+        text-align: center
+        text-transform: uppercase
+
+        strong
+            font-size: 4.8rem
+
+    .divider
+        height: .5rem
+        width: 70%
+        max-width: 70rem
+        background: linear-gradient(90deg, #5516BA 0%, rgba(255, 0, 229, 0.50) 80%)
+
+    .offer
+        text-align: center
+
+        &__text
+            font-size: 2rem
+            font-family: "Quicksand", sans-serif
+
+        &__price
+            @include module-mixins.subscription-price(variables.$text-color, 4rem)
+
+        &__month
+            font-size: 1.6rem
+            margin-left: .5rem
+
+    &__text
+        font-family: "Quicksand", sans-serif
+        font-size: 1.6rem
+        text-align: center
+        max-width: 29.5rem
+
+
+@keyframes move-background
+    0%
+        background-position: 0% 50%
+
+    50%
+        background-position: 100% 100%
+
+    100%
+        background-position: 0% 50%

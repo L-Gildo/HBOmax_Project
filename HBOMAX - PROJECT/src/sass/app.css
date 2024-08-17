@@ -1,0 +1,117 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #020228;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3.2rem 8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nav__logo {
+  width: 10rem;
+}
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header {
+  color: #FFFFFF;
+  background-image: linear-gradient(339deg, #56125B 0%, #0F0F10 50%, #271E6E 100%);
+  margin-top: 13rem;
+  padding: 10rem 4rem 30rem;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.header__channels {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+}
+.header__title {
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__title strong {
+  font-size: 4.8rem;
+}
+.header .divider {
+  width: 24rem;
+  height: 0.5rem;
+  max-width: 70rem;
+  background: linear-gradient(90deg, #5516BA 0%, rgba(255, 0, 229, 0.5) 80%);
+}
+.header .offer {
+  text-align: center;
+}
+.header .offer__text {
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+.header .offer__price {
+  font-size: 4rem;
+}
+.header .offer__month {
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
+}
+.header__text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  max-width: 29.5rem;
+}
+
+.btn {
+  color: #FFFFFF;
+  border-radius: 50rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: -moz-max-content;
+  width: max-content;
+}
+.btn-price {
+  background: #B535F6;
+  padding: 0.8rem 2.7rem;
+}
+.btn-subscribe {
+  background: linear-gradient(86deg, #9B34EF 21.42%, #490CB0 55.72%, rgba(0, 0, 0, 0) 126.09%);
+  padding: 1.6rem 4rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}/*# sourceMappingURL=app.css.map */
