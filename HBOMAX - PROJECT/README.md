@@ -30,11 +30,6 @@
 </p>
 
 
-<p align="center">
-  <img alt="Canal do YouTube" src="https://img.shields.io/youtube/channel/subscribers/UCHf8h4M94Wnw5o4deGWZKnw?label=Daniel%20Moura&logo=YouTube&logoColor=red&style=social">
-</p>
-
-
 ### 👨‍💻 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
