@@ -30,11 +30,6 @@
 </p>
 
 
-<h3 align="center">Deploy do projeto</h3>
-<p align="center">
-    <a href="https://danieldemoura.github.io/hbomax" target="_blank">🚀 Acesse por esse link o deploy do projeto</a>
-</p>
-
 <p align="center">
   <img alt="Canal do YouTube" src="https://img.shields.io/youtube/channel/subscribers/UCHf8h4M94Wnw5o4deGWZKnw?label=Daniel%20Moura&logo=YouTube&logoColor=red&style=social">
 </p>
